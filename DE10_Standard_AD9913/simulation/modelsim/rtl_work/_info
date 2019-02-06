@@ -1,0 +1,103 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/simulation/modelsim
+vDE10_Standard_AD9913
+Z1 !s110 1549487237
+!i10b 1
+!s100 dSIE?D;bh4eaWJNLOGW@F2
+Ie6XXSSO]XJkl6L>NZj1NV0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1549486661
+8C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/DE10_Standard_AD9913.v
+FC:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/DE10_Standard_AD9913.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1549487237.000000
+!s107 C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/DE10_Standard_AD9913.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913|C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/DE10_Standard_AD9913.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913
+Z7 tCvgOpt 0
+n@d@e10_@standard_@a@d9913
+vDE1_SOC_AD9913
+R1
+!i10b 1
+!s100 eX5z6QHgbA0A>X2DJ?2Rg1
+IdlZ=@fZI]g<0C?@ZOn:EG1
+R2
+R0
+w1543961212
+8C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/DE1_SOC_AD9913.v
+FC:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/DE1_SOC_AD9913.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/DE1_SOC_AD9913.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913|C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/DE1_SOC_AD9913.v|
+!i113 1
+R5
+R6
+R7
+n@d@e1_@s@o@c_@a@d9913
+vSPI_Bus_Transceiver
+!s110 1549487238
+!i10b 1
+!s100 fgZY^k>8LVl]Ug<feiEeF0
+I8QBJn[ONL<XA[LJgUg5mJ0
+R2
+R0
+w1543971004
+8C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/SPI_Bus_Transceiver.v
+FC:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/SPI_Bus_Transceiver.v
+FC:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/StdFunctions.vh
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1549487238.000000
+!s107 C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/StdFunctions.vh|C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/SPI_Bus_Transceiver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913|C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/SPI_Bus_Transceiver.v|
+!i113 1
+R5
+R6
+R7
+n@s@p@i_@bus_@transceiver
+vTF_SPI_Bus_Transceiver
+!s110 1549487246
+!i10b 1
+!s100 N08`>B1W_O:X74H0bE43R1
+IoERU1HB1D;^aDUMNfYYX80
+R2
+R0
+w1543961361
+8C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/TF_SPI_Bus_Transceiver.v
+FC:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/TF_SPI_Bus_Transceiver.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1549487245.000000
+!s107 C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/TF_SPI_Bus_Transceiver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913|C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/TF_SPI_Bus_Transceiver.v|
+!i113 1
+R5
+R6
+R7
+n@t@f_@s@p@i_@bus_@transceiver
