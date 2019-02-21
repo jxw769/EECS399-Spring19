@@ -192,5 +192,5 @@ dashboard_add $dash my_label_1 label $parent
 dashboard_set_property $dash my_label_1 text "MAX: 80.000000000MHz"
 
 dashboard_add $dash my_label_empty2 label $parent
-dashboard_set_property $dash my_label_empty2 text "                                                                                                                                                    "
+dashboard_set_property $dash my_label_empty2 text "                    "
 
