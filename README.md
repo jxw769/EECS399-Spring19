@@ -9,3 +9,7 @@ In folder `Bluetooth_SPP`. The Linux program is under `Linux_BT_App`; the Androi
 Linux_BT_App includes all C++ codes and the make file used by this project. 
 The .apk file of the app is under `TerasicBluetooth/bin/`.
 
+## Thunkable Sample Bluetooth Chat App
+`btchat.aia` is a sample Android app for Bluetooth SPP communication. It supports tranferring and receiving text data from connected devices. Can only be imported to [Thunkable Classic Platform](http://app.thunkable.com/?locale=en) (Not Cross Platform ver.).
+
+
