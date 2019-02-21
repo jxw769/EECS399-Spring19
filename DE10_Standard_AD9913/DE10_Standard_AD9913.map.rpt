@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE10_Standard_AD9913
-Wed Feb 06 19:25:20 2019
+Wed Feb 20 15:09:42 2019
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -232,7 +232,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Feb 06 19:25:20 2019       ;
+; Analysis & Synthesis Status     ; Successful - Wed Feb 20 15:09:42 2019       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE10_Standard_AD9913                        ;
 ; Top-level Entity Name           ; DE10_Standard_AD9913                        ;
@@ -5054,7 +5054,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -5064,61 +5064,61 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Feb 06 19:24:28 2019
+    Info: Processing started: Wed Feb 20 15:08:35 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE10_Standard_AD9913 -c DE10_Standard_AD9913
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12248): Elaborating Qsys system entity "test1a.qsys"
-Info (12250): 2019.02.06.19:24:41 Progress: Loading DE10_Standard_AD9913/test1a.qsys
-Info (12250): 2019.02.06.19:24:42 Progress: Reading input file
-Info (12250): 2019.02.06.19:24:42 Progress: Adding ADDR [altera_avalon_pio 17.0]
-Info (12250): 2019.02.06.19:24:42 Progress: Parameterizing module ADDR
-Info (12250): 2019.02.06.19:24:42 Progress: Adding DONE [altera_avalon_pio 17.0]
-Info (12250): 2019.02.06.19:24:42 Progress: Parameterizing module DONE
-Info (12250): 2019.02.06.19:24:42 Progress: Adding GPIO [altera_avalon_pio 17.0]
-Info (12250): 2019.02.06.19:24:42 Progress: Parameterizing module GPIO
-Info (12250): 2019.02.06.19:24:42 Progress: Adding LED [altera_avalon_pio 17.0]
-Info (12250): 2019.02.06.19:24:42 Progress: Parameterizing module LED
-Info (12250): 2019.02.06.19:24:42 Progress: Adding M_RESET [altera_avalon_pio 17.0]
-Info (12250): 2019.02.06.19:24:42 Progress: Parameterizing module M_RESET
-Info (12250): 2019.02.06.19:24:42 Progress: Adding OPER [altera_avalon_pio 17.0]
-Info (12250): 2019.02.06.19:24:42 Progress: Parameterizing module OPER
-Info (12250): 2019.02.06.19:24:42 Progress: Adding START [altera_avalon_pio 17.0]
-Info (12250): 2019.02.06.19:24:42 Progress: Parameterizing module START
-Info (12250): 2019.02.06.19:24:42 Progress: Adding START_16 [altera_avalon_pio 17.0]
-Info (12250): 2019.02.06.19:24:42 Progress: Parameterizing module START_16
-Info (12250): 2019.02.06.19:24:42 Progress: Adding WR_DATA [altera_avalon_pio 17.0]
-Info (12250): 2019.02.06.19:24:42 Progress: Parameterizing module WR_DATA
-Info (12250): 2019.02.06.19:24:42 Progress: Adding WR_DATA_16 [altera_avalon_pio 17.0]
-Info (12250): 2019.02.06.19:24:42 Progress: Parameterizing module WR_DATA_16
-Info (12250): 2019.02.06.19:24:42 Progress: Adding clk_0 [clock_source 17.0]
-Info (12250): 2019.02.06.19:24:43 Progress: Parameterizing module clk_0
-Info (12250): 2019.02.06.19:24:43 Progress: Adding master_0 [altera_jtag_avalon_master 17.0]
-Info (12250): 2019.02.06.19:24:43 Progress: Parameterizing module master_0
-Info (12250): 2019.02.06.19:24:43 Progress: Building connections
-Info (12250): 2019.02.06.19:24:43 Progress: Parameterizing connections
-Info (12250): 2019.02.06.19:24:43 Progress: Validating
-Info (12250): 2019.02.06.19:24:45 Progress: Done reading input file
+Info (12250): 2019.02.20.15:08:50 Progress: Loading DE10_Standard_AD9913/test1a.qsys
+Info (12250): 2019.02.20.15:08:50 Progress: Reading input file
+Info (12250): 2019.02.20.15:08:50 Progress: Adding ADDR [altera_avalon_pio 17.0]
+Info (12250): 2019.02.20.15:08:51 Progress: Parameterizing module ADDR
+Info (12250): 2019.02.20.15:08:51 Progress: Adding DONE [altera_avalon_pio 17.0]
+Info (12250): 2019.02.20.15:08:51 Progress: Parameterizing module DONE
+Info (12250): 2019.02.20.15:08:51 Progress: Adding GPIO [altera_avalon_pio 17.0]
+Info (12250): 2019.02.20.15:08:51 Progress: Parameterizing module GPIO
+Info (12250): 2019.02.20.15:08:51 Progress: Adding LED [altera_avalon_pio 17.0]
+Info (12250): 2019.02.20.15:08:51 Progress: Parameterizing module LED
+Info (12250): 2019.02.20.15:08:51 Progress: Adding M_RESET [altera_avalon_pio 17.0]
+Info (12250): 2019.02.20.15:08:51 Progress: Parameterizing module M_RESET
+Info (12250): 2019.02.20.15:08:51 Progress: Adding OPER [altera_avalon_pio 17.0]
+Info (12250): 2019.02.20.15:08:51 Progress: Parameterizing module OPER
+Info (12250): 2019.02.20.15:08:51 Progress: Adding START [altera_avalon_pio 17.0]
+Info (12250): 2019.02.20.15:08:51 Progress: Parameterizing module START
+Info (12250): 2019.02.20.15:08:51 Progress: Adding START_16 [altera_avalon_pio 17.0]
+Info (12250): 2019.02.20.15:08:51 Progress: Parameterizing module START_16
+Info (12250): 2019.02.20.15:08:51 Progress: Adding WR_DATA [altera_avalon_pio 17.0]
+Info (12250): 2019.02.20.15:08:51 Progress: Parameterizing module WR_DATA
+Info (12250): 2019.02.20.15:08:51 Progress: Adding WR_DATA_16 [altera_avalon_pio 17.0]
+Info (12250): 2019.02.20.15:08:51 Progress: Parameterizing module WR_DATA_16
+Info (12250): 2019.02.20.15:08:51 Progress: Adding clk_0 [clock_source 17.0]
+Info (12250): 2019.02.20.15:08:52 Progress: Parameterizing module clk_0
+Info (12250): 2019.02.20.15:08:52 Progress: Adding master_0 [altera_jtag_avalon_master 17.0]
+Info (12250): 2019.02.20.15:08:52 Progress: Parameterizing module master_0
+Info (12250): 2019.02.20.15:08:52 Progress: Building connections
+Info (12250): 2019.02.20.15:08:52 Progress: Parameterizing connections
+Info (12250): 2019.02.20.15:08:52 Progress: Validating
+Info (12250): 2019.02.20.15:08:54 Progress: Done reading input file
 Info (12250): Test1a.DONE: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info (12250): Test1a: Generating test1a "test1a" for QUARTUS_SYNTH
 Info (12250): ADDR: Starting RTL generation for module 'test1a_ADDR'
-Info (12250): ADDR:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_ADDR --dir=C:/Users/cyrus/AppData/Local/Temp/alt7934_3860729565508027319.dir/0001_ADDR_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7934_3860729565508027319.dir/0001_ADDR_gen//test1a_ADDR_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): ADDR:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_ADDR --dir=C:/Users/cyrus/AppData/Local/Temp/alt7947_3758123930385451698.dir/0001_ADDR_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7947_3758123930385451698.dir/0001_ADDR_gen//test1a_ADDR_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): ADDR: Done RTL generation for module 'test1a_ADDR'
 Info (12250): ADDR: "test1a" instantiated altera_avalon_pio "ADDR"
 Info (12250): DONE: Starting RTL generation for module 'test1a_DONE'
-Info (12250): DONE:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_DONE --dir=C:/Users/cyrus/AppData/Local/Temp/alt7934_3860729565508027319.dir/0002_DONE_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7934_3860729565508027319.dir/0002_DONE_gen//test1a_DONE_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): DONE:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_DONE --dir=C:/Users/cyrus/AppData/Local/Temp/alt7947_3758123930385451698.dir/0002_DONE_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7947_3758123930385451698.dir/0002_DONE_gen//test1a_DONE_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): DONE: Done RTL generation for module 'test1a_DONE'
 Info (12250): DONE: "test1a" instantiated altera_avalon_pio "DONE"
 Info (12250): M_RESET: Starting RTL generation for module 'test1a_M_RESET'
-Info (12250): M_RESET:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_M_RESET --dir=C:/Users/cyrus/AppData/Local/Temp/alt7934_3860729565508027319.dir/0003_M_RESET_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7934_3860729565508027319.dir/0003_M_RESET_gen//test1a_M_RESET_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): M_RESET:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_M_RESET --dir=C:/Users/cyrus/AppData/Local/Temp/alt7947_3758123930385451698.dir/0003_M_RESET_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7947_3758123930385451698.dir/0003_M_RESET_gen//test1a_M_RESET_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): M_RESET: Done RTL generation for module 'test1a_M_RESET'
 Info (12250): M_RESET: "test1a" instantiated altera_avalon_pio "M_RESET"
 Info (12250): WR_DATA: Starting RTL generation for module 'test1a_WR_DATA'
-Info (12250): WR_DATA:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_WR_DATA --dir=C:/Users/cyrus/AppData/Local/Temp/alt7934_3860729565508027319.dir/0004_WR_DATA_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7934_3860729565508027319.dir/0004_WR_DATA_gen//test1a_WR_DATA_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): WR_DATA:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_WR_DATA --dir=C:/Users/cyrus/AppData/Local/Temp/alt7947_3758123930385451698.dir/0004_WR_DATA_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7947_3758123930385451698.dir/0004_WR_DATA_gen//test1a_WR_DATA_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): WR_DATA: Done RTL generation for module 'test1a_WR_DATA'
 Info (12250): WR_DATA: "test1a" instantiated altera_avalon_pio "WR_DATA"
 Info (12250): WR_DATA_16: Starting RTL generation for module 'test1a_WR_DATA_16'
-Info (12250): WR_DATA_16:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_WR_DATA_16 --dir=C:/Users/cyrus/AppData/Local/Temp/alt7934_3860729565508027319.dir/0005_WR_DATA_16_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7934_3860729565508027319.dir/0005_WR_DATA_16_gen//test1a_WR_DATA_16_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): WR_DATA_16:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_WR_DATA_16 --dir=C:/Users/cyrus/AppData/Local/Temp/alt7947_3758123930385451698.dir/0005_WR_DATA_16_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7947_3758123930385451698.dir/0005_WR_DATA_16_gen//test1a_WR_DATA_16_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): WR_DATA_16: Done RTL generation for module 'test1a_WR_DATA_16'
 Info (12250): WR_DATA_16: "test1a" instantiated altera_avalon_pio "WR_DATA_16"
 Info (12250): Master_0: "test1a" instantiated altera_jtag_avalon_master "master_0"
@@ -5342,7 +5342,7 @@ Info (12128): Elaborating entity "test1a_mm_interconnect_0_avalon_st_adapter" fo
 Info (12128): Elaborating entity "test1a_mm_interconnect_0_avalon_st_adapter_error_adapter_0" for hierarchy "test1a:u0|test1a_mm_interconnect_0:mm_interconnect_0|test1a_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter|test1a_mm_interconnect_0_avalon_st_adapter_error_adapter_0:error_adapter_0" File: C:/Projects/EECS399-Spring19/DE10_Standard_AD9913/db/ip/test1a/submodules/test1a_mm_interconnect_0_avalon_st_adapter.v Line: 200
 Info (12128): Elaborating entity "SPI_Bus_Transceiver" for hierarchy "SPI_Bus_Transceiver:spi_transceiver" File: C:/Projects/EECS399-Spring19/DE10_Standard_AD9913/DE10_Standard_AD9913.v Line: 106
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2019.02.06.19:25:08 Progress: Loading sldf0979fd2/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2019.02.20.15:09:27 Progress: Loading sldf0979fd2/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -5479,10 +5479,10 @@ Info (21057): Implemented 1435 device resources after synthesis - the final reso
     Info (21061): Implemented 1358 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 70 warnings
-    Info: Peak virtual memory: 4973 megabytes
-    Info: Processing ended: Wed Feb 06 19:25:20 2019
-    Info: Elapsed time: 00:00:52
-    Info: Total CPU time (on all processors): 00:01:44
+    Info: Peak virtual memory: 4972 megabytes
+    Info: Processing ended: Wed Feb 20 15:09:42 2019
+    Info: Elapsed time: 00:01:07
+    Info: Total CPU time (on all processors): 00:01:55
 
 
 +------------------------------------------+

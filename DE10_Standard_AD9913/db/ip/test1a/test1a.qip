@@ -2,7 +2,7 @@ set_global_assignment -entity "test1a" -library "test1a" -name IP_TOOL_NAME "Qsy
 set_global_assignment -entity "test1a" -library "test1a" -name IP_TOOL_VERSION "17.0"
 set_global_assignment -entity "test1a" -library "test1a" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "test1a" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../../test1a.sopcinfo"]
-set_global_assignment -entity "test1a" -library "test1a" -name SLD_INFO "QSYS_NAME test1a HAS_SOPCINFO 1 GENERATION_ID 1549499085"
+set_global_assignment -entity "test1a" -library "test1a" -name SLD_INFO "QSYS_NAME test1a HAS_SOPCINFO 1 GENERATION_ID 1550693335"
 set_global_assignment -library "test1a" -name SLD_FILE [file join $::quartus(qip_path) "test1a.regmap"]
 set_global_assignment -library "test1a" -name SLD_FILE [file join $::quartus(qip_path) "test1a.debuginfo"]
 set_global_assignment -entity "test1a" -library "test1a" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
@@ -15,7 +15,7 @@ set_global_assignment -entity "test1a" -library "test1a" -name IP_COMPONENT_DISP
 set_global_assignment -entity "test1a" -library "test1a" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "test1a" -library "test1a" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "test1a" -library "test1a" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "test1a" -library "test1a" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTU0OTQ5OTA4NQ==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "test1a" -library "test1a" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTU1MDY5MzMzNQ==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "test1a" -library "test1a" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "test1a" -library "test1a" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTWEZDNkQ2RjMxQzY=::QXV0byBERVZJQ0U="
 set_global_assignment -entity "test1a" -library "test1a" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Nl9INg==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
