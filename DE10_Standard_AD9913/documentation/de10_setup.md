@@ -32,7 +32,7 @@ Copy `GUITest.tcl` from `DE10_Standard_AD9913/command_scripts` into the opened `
 8. `GUITest.tcl` contains a simple GUI for control AD9913 output frequency according to user input. 
 To use it, double click `GUITest.tcl` under scripts folder in System Console. 
 The interface is shown as below. 
-The user input frequency ranges from 0 to 80, with up to 9 digits of precision. 
+The user input frequency ranges from 0 to 80, with up to 7 digits of precision. 
 Press "Load" to generate clock output at input frequency. Press "Stop" to terminate frequency output.
 <br/>![GUITest](gui_test.PNG) <br/>
 

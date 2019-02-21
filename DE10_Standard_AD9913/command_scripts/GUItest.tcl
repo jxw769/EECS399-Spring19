@@ -189,7 +189,7 @@ dashboard_set_property $dash my_button1 text "Stop"
 dashboard_set_property $dash my_button1 onClick "update_my_label_with_my_text_field_OFF $dash"
 
 dashboard_add $dash my_label_1 label $parent
-dashboard_set_property $dash my_label_1 text "MAX: 80.000000000MHz"
+dashboard_set_property $dash my_label_1 text "MAX: 80.0000000MHz"
 
 dashboard_add $dash my_label_empty2 label $parent
 dashboard_set_property $dash my_label_empty2 text "                    "
