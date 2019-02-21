@@ -34,7 +34,7 @@ The interface is shown as below.
 The user input frequency ranges from 0 to 80, with up to 9 digits of precision. 
 Press "Load" to generate clock output at input frequency. Press "Stop" to terminate frequency output.
 <br/> 
-![GUITest.tcl](GUITest.PNG)<br/>
+![GUITest](GUITest.PNG)<br/>
 
 ## Known Issues and Workarounds
 1. Sometimes when the AD9913 board is boot up for the first time, executing the test program would not generate frequency output. 
