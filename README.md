@@ -2,7 +2,7 @@
 Senior Project II for EECS399 in Spring 2019.
 
 ## Updated DDS Project 
-In folder `DE10_Standard_AD9913`. Changed board to DE10 Standard from DE1. <br/>**See [DE10 setup](EECS399-Spring19/DE10_Standard_AD9913/documentation/de10_setup.md) for the setup tutorial.**
+In folder `DE10_Standard_AD9913`. Changed board to DE10 Standard from DE1. <br/>**See [DE10 setup](/DE10_Standard_AD9913/documentation/de10_setup.md) for the setup tutorial.**
 
 ## Sample Bluetooth Program
 In folder `Bluetooth_SPP`. The Linux program is under `Linux_BT_App`; the Android app is under `TerasicBluetooth`. 
