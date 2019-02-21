@@ -11,16 +11,17 @@
 4. Connect designated GPIO pins on DE10 to the pins on the AD9913 board using female-female wires. . 
 The GPIO pinout is shown as below and used pins are marked. <br/>
 ![DE10 GPIO Pinout](de10gpio.PNG) <br/>
-The connections to AD9913 board: <br/>
-|GPIO Pins| AD9913 Board |
-|--|--|
-| GPIO_D11 | IOUPDATE |
-| GPIO_D13 | CS_N|
-| GPIO_D15 | SDIO|
-| GPIO_D17 | SCLK|
-| GPIO_D19 | RESET|
-| VCC3P3| 3V3|
-| GND| GND|
+The connections to AD9913 board:  
+
+| GPIO Pins | AD9913 Board |
+|-----------|--------------|
+| GPIO_D11  | IOUPDATE     |
+| GPIO_D13  | CS_N         |
+| GPIO_D15  | SDIO         |
+| GPIO_D17  | SCLK         |
+| GPIO_D19  | RESET        |
+| VCC3P3    | 3V3          |
+| GND       | GND          |
 5. Power up DE10.
 6. Open "Program Device (Open Programmer)" window from Quartus. 
 If the proper driver has been installed, DE10 should appear connected. 
