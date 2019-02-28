@@ -1,0 +1,130 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\cyrus\Downloads\DE10_Standard\DE10-Standard_v.1.2.9_SystemCD\Tool\SystemBuilder\CodeGenerated\DE10_Standard\DE10_Standard_AD9913\test1a.qsys --block-symbol-file --output-directory=C:\Users\cyrus\Downloads\DE10_Standard\DE10-Standard_v.1.2.9_SystemCD\Tool\SystemBuilder\CodeGenerated\DE10_Standard\DE10_Standard_AD9913\test1a --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading DE10_Standard_AD9913/test1a.qsys
+Progress: Reading input file
+Progress: Adding ADDR [altera_avalon_pio 17.0]
+Progress: Parameterizing module ADDR
+Progress: Adding DONE [altera_avalon_pio 17.0]
+Progress: Parameterizing module DONE
+Progress: Adding GPIO [altera_avalon_pio 17.0]
+Progress: Parameterizing module GPIO
+Progress: Adding LED [altera_avalon_pio 17.0]
+Progress: Parameterizing module LED
+Progress: Adding M_RESET [altera_avalon_pio 17.0]
+Progress: Parameterizing module M_RESET
+Progress: Adding OPER [altera_avalon_pio 17.0]
+Progress: Parameterizing module OPER
+Progress: Adding START [altera_avalon_pio 17.0]
+Progress: Parameterizing module START
+Progress: Adding START_16 [altera_avalon_pio 17.0]
+Progress: Parameterizing module START_16
+Progress: Adding WR_DATA [altera_avalon_pio 17.0]
+Progress: Parameterizing module WR_DATA
+Progress: Adding WR_DATA_16 [altera_avalon_pio 17.0]
+Progress: Parameterizing module WR_DATA_16
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Adding master_0 [altera_jtag_avalon_master 17.0]
+Progress: Parameterizing module master_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: test1a.DONE: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\cyrus\Downloads\DE10_Standard\DE10-Standard_v.1.2.9_SystemCD\Tool\SystemBuilder\CodeGenerated\DE10_Standard\DE10_Standard_AD9913\test1a.qsys --synthesis=VERILOG --output-directory=C:\Users\cyrus\Downloads\DE10_Standard\DE10-Standard_v.1.2.9_SystemCD\Tool\SystemBuilder\CodeGenerated\DE10_Standard\DE10_Standard_AD9913\test1a\synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading DE10_Standard_AD9913/test1a.qsys
+Progress: Reading input file
+Progress: Adding ADDR [altera_avalon_pio 17.0]
+Progress: Parameterizing module ADDR
+Progress: Adding DONE [altera_avalon_pio 17.0]
+Progress: Parameterizing module DONE
+Progress: Adding GPIO [altera_avalon_pio 17.0]
+Progress: Parameterizing module GPIO
+Progress: Adding LED [altera_avalon_pio 17.0]
+Progress: Parameterizing module LED
+Progress: Adding M_RESET [altera_avalon_pio 17.0]
+Progress: Parameterizing module M_RESET
+Progress: Adding OPER [altera_avalon_pio 17.0]
+Progress: Parameterizing module OPER
+Progress: Adding START [altera_avalon_pio 17.0]
+Progress: Parameterizing module START
+Progress: Adding START_16 [altera_avalon_pio 17.0]
+Progress: Parameterizing module START_16
+Progress: Adding WR_DATA [altera_avalon_pio 17.0]
+Progress: Parameterizing module WR_DATA
+Progress: Adding WR_DATA_16 [altera_avalon_pio 17.0]
+Progress: Parameterizing module WR_DATA_16
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Adding master_0 [altera_jtag_avalon_master 17.0]
+Progress: Parameterizing module master_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: test1a.DONE: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: test1a: Generating test1a "test1a" for QUARTUS_SYNTH
+Info: ADDR: Starting RTL generation for module 'test1a_ADDR'
+Info: ADDR:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_ADDR --dir=C:/Users/cyrus/AppData/Local/Temp/alt7933_5304782612711800.dir/0001_ADDR_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7933_5304782612711800.dir/0001_ADDR_gen//test1a_ADDR_component_configuration.pl  --do_build_sim=0  ]
+Info: ADDR: Done RTL generation for module 'test1a_ADDR'
+Info: ADDR: "test1a" instantiated altera_avalon_pio "ADDR"
+Info: DONE: Starting RTL generation for module 'test1a_DONE'
+Info: DONE:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_DONE --dir=C:/Users/cyrus/AppData/Local/Temp/alt7933_5304782612711800.dir/0002_DONE_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7933_5304782612711800.dir/0002_DONE_gen//test1a_DONE_component_configuration.pl  --do_build_sim=0  ]
+Info: DONE: Done RTL generation for module 'test1a_DONE'
+Info: DONE: "test1a" instantiated altera_avalon_pio "DONE"
+Info: M_RESET: Starting RTL generation for module 'test1a_M_RESET'
+Info: M_RESET:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_M_RESET --dir=C:/Users/cyrus/AppData/Local/Temp/alt7933_5304782612711800.dir/0003_M_RESET_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7933_5304782612711800.dir/0003_M_RESET_gen//test1a_M_RESET_component_configuration.pl  --do_build_sim=0  ]
+Info: M_RESET: Done RTL generation for module 'test1a_M_RESET'
+Info: M_RESET: "test1a" instantiated altera_avalon_pio "M_RESET"
+Info: WR_DATA: Starting RTL generation for module 'test1a_WR_DATA'
+Info: WR_DATA:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_WR_DATA --dir=C:/Users/cyrus/AppData/Local/Temp/alt7933_5304782612711800.dir/0004_WR_DATA_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7933_5304782612711800.dir/0004_WR_DATA_gen//test1a_WR_DATA_component_configuration.pl  --do_build_sim=0  ]
+Info: WR_DATA: Done RTL generation for module 'test1a_WR_DATA'
+Info: WR_DATA: "test1a" instantiated altera_avalon_pio "WR_DATA"
+Info: WR_DATA_16: Starting RTL generation for module 'test1a_WR_DATA_16'
+Info: WR_DATA_16:   Generation command is [exec C:/intelfpga_lite/17.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=test1a_WR_DATA_16 --dir=C:/Users/cyrus/AppData/Local/Temp/alt7933_5304782612711800.dir/0005_WR_DATA_16_gen/ --quartus_dir=C:/intelfpga_lite/17.0/quartus --verilog --config=C:/Users/cyrus/AppData/Local/Temp/alt7933_5304782612711800.dir/0005_WR_DATA_16_gen//test1a_WR_DATA_16_component_configuration.pl  --do_build_sim=0  ]
+Info: WR_DATA_16: Done RTL generation for module 'test1a_WR_DATA_16'
+Info: WR_DATA_16: "test1a" instantiated altera_avalon_pio "WR_DATA_16"
+Info: master_0: "test1a" instantiated altera_jtag_avalon_master "master_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "test1a" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "test1a" instantiated altera_reset_controller "rst_controller"
+Info: jtag_phy_embedded_in_jtag_master: "master_0" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: timing_adt: "master_0" instantiated timing_adapter "timing_adt"
+Info: fifo: "master_0" instantiated altera_avalon_sc_fifo "fifo"
+Info: b2p: "master_0" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: p2b: "master_0" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: transacto: "master_0" instantiated altera_avalon_packets_to_master "transacto"
+Info: b2p_adapter: "master_0" instantiated channel_adapter "b2p_adapter"
+Info: p2b_adapter: "master_0" instantiated channel_adapter "p2b_adapter"
+Info: master_0_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "master_0_master_translator"
+Info: LED_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "LED_s1_translator"
+Info: master_0_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "master_0_master_agent"
+Info: LED_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "LED_s1_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: master_0_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "master_0_master_limiter"
+Info: Reusing file C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/test1a/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/test1a/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/cyrus/Downloads/DE10_Standard/DE10-Standard_v.1.2.9_SystemCD/Tool/SystemBuilder/CodeGenerated/DE10_Standard/DE10_Standard_AD9913/test1a/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: test1a: Done "test1a" with 30 modules, 45 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
