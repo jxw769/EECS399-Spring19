@@ -1,6 +1,8 @@
+#!/usr/bin/env python3
+
 import bluetooth
 import json #code needed: read, write file and send as json.
-import requests
+import base64
 
 server_sock=bluetooth.BluetoothSocket(bluetooth.RFCOMM)
 port = 1
@@ -20,9 +22,15 @@ try:
         print ("received [%s]" % received_data)
 
         #send data
-        filedata = str(open("/home/root/1.png","rb")) #something is not working
-        msg = json.dumps({"data": filedata, "cmd":{"transmit_flag":True}}) #add cmd type here
+        with open("1.png","rb") as img:
+            imgdata = base64.b64encode(img.read()).decode('ascii')
+        msg = json.dumps({"data": imgdata, "cmd":{"transmit_flag":True}}) #add cmd type here
         client_sock.send(msg)
+
+        #on receiving end of android: #only as reference in this file
+        #imgdata = received_data["data"]
+        #with open("newimg.png","wb") as imgwrite:
+        #    imgwrite.write(base64.b64decode(imgdata.encode('ascii')))
 
 except IOError:
     pass
