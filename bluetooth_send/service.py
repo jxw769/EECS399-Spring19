@@ -49,7 +49,7 @@ class MobileService(object):
             imgdata = base64.b64encode(img.read()).decode('ascii')
         msg = json.dumps({"data": imgdata})
 
-        self.bt_send("msg") #should send msg
+        self.bt_send(msg) #should send msg
 
         #################################################################
         #on receiving end of android: (only as reference in this file)  #
