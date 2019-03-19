@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import bluetooth
-import json #code needed: read, write file and send as json.
+import json
 import base64
 
 class MobileService(object):
@@ -10,13 +10,13 @@ class MobileService(object):
     port = 1
     client_sock = None
     address = None
+    received_flg = False #Android's reaction to receiving img; initiate new cycle of transmission
 
     def serve(self):
         self.server_sock=bluetooth.BluetoothSocket(bluetooth.RFCOMM)
         self.server_sock.bind(("",self.port))
         self.server_sock.listen(1)
         print("Advertising...")
-        #confirm connection
         self.client_sock, self.address = self.server_sock.accept()
         print("Accepted connection from", self.address)
         self.on_message()
@@ -24,35 +24,51 @@ class MobileService(object):
     def on_message(self):
         try:
             while True:
-                #receive data
-                #received_data = json.loads(client_sock.recv(1024)) #Terminal use bytes not json
+                #received_data = json.loads(client_sock.recv(1024)) #not used; Terminal use bytes not json
                 received_data = self.client_sock.recv(1024)
+
                 if len(received_data) == 0: break
-                print ("received [%s]" % received_data)
 
-                #send data
-                with open("sample_files/1.png","rb") as img:
-                    imgdata = base64.b64encode(img.read()).decode('ascii')
-                msg = json.dumps({"data": imgdata, "cmd":{"transmit_flag":True}}) #add cmd type here
-                self.client_sock.send("You are connected to the service") #send msg; for testing we send a normal string
+                print ("received data: %s" % received_data)
 
-                #on receiving end of android: #only as reference in this file
-                #imgdata = received_data["data"]
-                #with open("newimg.png","wb") as imgwrite:
-                #    imgwrite.write(base64.b64decode(imgdata.encode('ascii')))
+                #if 'received_flg' in received_data:
+                    #self.received_flg = received_data['received_flg']
+
+                if self.received_flg == False: #in reality this should be True (send iff last transmission has been received)
+                    self.img_read_and_send()
+
+                self.received_flg = False #resetting the received flag
 
         except IOError:
-            pass
-        self.disconnected()
+            print("error has been detected")
 
-    def disconnected(self):
+        self.disconnect()
+
+    def img_read_and_send(self):
+        with open("sample_files/1.png","rb") as img:
+            imgdata = base64.b64encode(img.read()).decode('ascii')
+        msg = json.dumps({"data": imgdata})
+
+        self.bt_send("msg") #should send msg
+
+        #################################################################
+        #on receiving end of android: (only as reference in this file)  #
+        #imgdata = received_data["data"]                                #
+        #with open("newimg.png","wb") as imgwrite:                      #
+        #    imgwrite.write(base64.b64decode(imgdata.encode('ascii')))  #
+        #################################################################
+
+    def bt_send(self,msg):
+        self.client_sock.send(msg)
+
+    def disconnect(self):
         print("disconnected")
         self.client_sock.close()
         self.server_sock.close()
-        self.reconnect()
+        self.reconnect() #automatically start new session
 
     def reconnect(self):
-        self.serve()
+        self.serve() #there is probably a better way to do this
 
 if __name__ == '__main__':
     service = MobileService().serve()
