@@ -5,12 +5,18 @@ import json
 import base64
 
 class MobileService(object):
+  
+    img_dir = "sample_files/1.png"
 
     server_sock = None
     port = 1
     client_sock = None
     address = None
     received_flg = False #Android's reaction to receiving img; initiate new cycle of transmission
+
+    proceed_flg = False #if user press the button, proceed
+    center_flg = False #if the circle is in center; being updated
+
 
     def serve(self):
         self.server_sock=bluetooth.BluetoothSocket(bluetooth.RFCOMM)
@@ -37,7 +43,13 @@ class MobileService(object):
                 if self.received_flg == False: #in reality this should be True (send iff last transmission has been received)
                     self.img_read_and_send()
 
-                self.received_flg = False #resetting the received flag
+
+                if self.proceed_flg and self.center_flg == True:
+                    self.proceed_task()
+
+                self.received_flg = False #resetting the flags
+                self.proceed_flg = False
+
 
         except IOError:
             print("error has been detected")
@@ -45,11 +57,13 @@ class MobileService(object):
         self.disconnect()
 
     def img_read_and_send(self):
-        with open("sample_files/1.png","rb") as img:
-            imgdata = base64.b64encode(img.read()).decode('ascii')
-        msg = json.dumps({"data": imgdata})
 
-        self.bt_send("msg") #should send msg
+        with open(self.img_dir,"rb") as img:
+            imgdata = base64.b64encode(img.read()).decode('ascii')
+        msg = json.dumps({"data": imgdata}) #around 200 kb
+
+        self.bt_send(msg)
+
 
         #################################################################
         #on receiving end of android: (only as reference in this file)  #
@@ -60,6 +74,11 @@ class MobileService(object):
 
     def bt_send(self,msg):
         self.client_sock.send(msg)
+
+
+    def proceed_task(self):
+        pass #start scanning or whatever
+
 
     def disconnect(self):
         print("disconnected")
