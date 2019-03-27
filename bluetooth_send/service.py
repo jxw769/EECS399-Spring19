@@ -54,7 +54,7 @@ class MobileService(object):
     def img_read_and_send(self):
         with open(self.img_dir,"rb") as img:
             imgdata = base64.b64encode(img.read()).decode('ascii')
-        msg = json.dumps({"data": imgdata}) #around 200 kb
+        msg = json.dumps({"data": {'image':imgdata}}) #around 200 kb
 
         self.bt_send(msg)
 
