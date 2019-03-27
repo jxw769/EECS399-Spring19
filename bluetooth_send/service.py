@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
-
 import bluetooth
 import json
 import base64
 
 class MobileService(object):
-
     img_dir = "sample_files/1.png"
     server_sock = None
     port = 1
     client_sock = None
     address = None
+    
     received_flg = True #Android's reaction to receiving img; initiate new cycle of transmission, always true for testing
     proceed_flg = False #if user press the button, proceed
     center_flg = False #if the circle is in center; being updated
@@ -53,7 +52,7 @@ class MobileService(object):
         if self.proceed_flg and self.center_flg == True:
             self.proceed_task()
 
-        self.received_flg = False #resetting the flags
+        self.received_flg = True #resetting the flags
         self.proceed_flg = False
 
     def img_read_and_send(self):
@@ -80,7 +79,6 @@ class MobileService(object):
         print("disconnected")
         self.client_sock.close()
         self.server_sock.close()
-
 
 if __name__ == '__main__':
     while True:
