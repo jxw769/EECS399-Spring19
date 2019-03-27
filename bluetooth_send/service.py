@@ -9,7 +9,7 @@ class MobileService(object):
     port = 1
     client_sock = None
     address = None
-    
+
     received_flg = True #Android's reaction to receiving img; initiate new cycle of transmission, always true for testing
     proceed_flg = False #if user press the button, proceed
     center_flg = False #if the circle is in center; being updated
