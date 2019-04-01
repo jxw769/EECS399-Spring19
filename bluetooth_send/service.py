@@ -26,7 +26,7 @@ class MobileService(object):
     def on_message(self):
         try:
             while True:
-                received_data = json.loads(client_sock.recv(1024)) ###!Need App to send Json.
+                received_data = json.loads(self.client_sock.recv(1024)) ###!Need App to send Json.
                 #received_data = self.client_sock.recv(1024)
 
                 if len(received_data) == 0: break
@@ -40,11 +40,7 @@ class MobileService(object):
 
     def handle_received_data(received_data):
         print ("received data: %s" % received_data)
-
-        if 'received_flg' in received_data:
-            self.received_flg = received_data['received_flg']
-        else:
-            print("Image has not been received by Android (but image sent anyway)")
+        self.received_flg = received_data['received_flg']
 
         if self.received_flg == True:
             self.img_read_and_send()
