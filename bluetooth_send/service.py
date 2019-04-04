@@ -10,7 +10,7 @@ class MobileService(object):
     client_sock = None
     address = None
 
-    received_flg = True #Android's reaction to receiving img; initiate new cycle of transmission, always true for testing
+    received_flg = False #Android's reaction to receiving img; initiate new cycle of transmission, always true for testing
     proceed_flg = False #if user press the button, proceed
     center_flg = False #if the circle is in center; being updated
 
@@ -26,19 +26,19 @@ class MobileService(object):
     def on_message(self):
         try:
             while True:
-                received_data = json.loads(self.client_sock.recv(1024)) ###!Need App to send Json.
-                #received_data = self.client_sock.recv(1024)
+                received_data = self.client_sock.recv(1024)
 
                 if len(received_data) == 0: break
 
-                self.handle_received_data(received_data)
+                json_msg = json.loads(received_data.decode('utf8'))
+                self.handle_received_data(json_msg)
 
         except IOError:
             print("error has been detected")
 
         self.disconnect()
 
-    def handle_received_data(received_data):
+    def handle_received_data(self,received_data):
         print ("received data: %s" % received_data)
         self.received_flg = received_data['received_flg']
 
@@ -48,7 +48,7 @@ class MobileService(object):
         if self.proceed_flg and self.center_flg == True:
             self.proceed_task()
 
-        self.received_flg = True #resetting the flags
+        self.received_flg = False
         self.proceed_flg = False
 
     def img_read_and_send(self):
