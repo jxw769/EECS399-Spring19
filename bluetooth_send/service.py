@@ -10,7 +10,7 @@ class MobileService(object):
     client_sock = None
     address = None
 
-    received_flg = False #Android's reaction to receiving img; initiate new cycle of transmission, always true for testing
+    send_flg = False #if true, send new image
     proceed_flg = False #if user press the button, proceed
     center_flg = False #if the circle is in center; being updated
 
@@ -40,15 +40,15 @@ class MobileService(object):
 
     def handle_received_data(self,received_data):
         print ("received data: %s" % received_data)
-        self.received_flg = received_data['received_flg']
+        self.send_flg = received_data['send_flg']
 
-        if self.received_flg == True:
+        if self.send_flg == True:
             self.img_read_and_send()
 
         if self.proceed_flg and self.center_flg == True:
             self.proceed_task()
 
-        self.received_flg = False
+        self.send_flg = False
         self.proceed_flg = False
 
     def img_read_and_send(self):
@@ -57,7 +57,7 @@ class MobileService(object):
         msg = json.dumps({"data": {'image':imgdata}}) #around 200 kb
 
         self.bt_send(msg)
-
+        print("new image sent")
         #################################################################
         #on receiving end of android: (only as reference in this file)  #
         #imgdata = received_data["data"]                                #
