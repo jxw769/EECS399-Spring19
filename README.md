@@ -22,7 +22,13 @@ The .apk file of the app is under `TerasicBluetooth/bin/`.
 * **Disconnect** to disconnect from current connected device.
 
 ### Screenshots
-(not completed)
+
+<img src="/Screenshots/App_Icon.png">
+<img src="/Screenshots/App_Start_Up.png" width="500">
+<img src="/Screenshots/App_Image_Display.png" width="500">
+<img src="/Screenshots/De10_Server_Log.png" width="500">
+<img src="/Screenshots/ThunkableDesign.PNG" width="500">
+
 
 ### References
 1. Thunkable Sample Bluetooth Chat App
