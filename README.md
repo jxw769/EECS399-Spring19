@@ -13,6 +13,14 @@ The .apk file of the app is under `TerasicBluetooth/bin/`.
 `btspp.aia` is the Thunkable based Android app that can display scanning images via Bluetooth. Image data via Bluetooth is parsed to JSON from text format and converted to orignal PNG type from base64 JSON string. The app supports continous transmission and display of the scanning images, with a FPS around 0.5~1 due to Bluetooth transmission rate limit. *Can only be imported to [Thunkable Classic Platform](http://app.thunkable.com/?locale=en) (Not Cross Platform ver.).*
 
 ### How to use it
+#### DE10 SoC Setup
+* **Make sure DE10 switch setup is the same as below**
+   ![DE10 Switch SoC](switchsoc.PNG) <\br>
+* Boot up the Linux system.
+* Execute  ```./eecs399/bluetooth_send/service.py```
+  
+
+#### Android App
 * Press **Connect** to connect with a paired device (DE10 for current use).
 * **Scan** to accept image data transmission via Bluetooth. Image are displayed in the *Log* section. 
     * Scroll down *Log* to see activity history.
