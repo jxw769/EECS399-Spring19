@@ -3,7 +3,8 @@ Senior Project II for EECS399 in Spring 2019.
 
 ## Updated DDS Project 
 In folder `DE10_Standard_AD9913`. Changed board to DE10 Standard from DE1. <br/>**See [DE10 setup](/DE10_Standard_AD9913/documentation/de10_setup.md) for the setup tutorial.**
-PCB Files and component datasheets are in `AD9913_PCB`.
+
+EAGLE PCB Files and component datasheets are in `AD9913_PCB`.
 
 ## Bluetooth SPP Android App
 `btspp.aia` is the Thunkable based Android app that can display scanning images via Bluetooth. Image data via Bluetooth is parsed to JSON from text format and converted to orignal PNG type from base64 JSON string. The app supports continous transmission and display of the scanning images, with a FPS around 0.5~1 due to Bluetooth transmission rate limit. *Can only be imported to [Thunkable Classic Platform](http://app.thunkable.com/?locale=en) (Not Cross Platform ver.).*
