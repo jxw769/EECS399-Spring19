@@ -15,7 +15,7 @@ The .apk file of the app is under `TerasicBluetooth/bin/`.
 ### How to use it
 #### DE10 SoC Setup
 * **Make sure DE10 switch setup is the same as below**
-   ![DE10 Switch SoC](switchsoc.PNG) <\br>
+   ![DE10 Switch SoC](/Screenshots/switchsoc.PNG) </br>
 * Boot up the Linux system.
 * Execute  ```./eecs399/bluetooth_send/service.py```
   
