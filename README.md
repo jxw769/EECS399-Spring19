@@ -14,7 +14,7 @@ EAGLE PCB Files and component datasheets are in `AD9913_PCB`.
 * **Make sure DE10 switch setup is the same as below**
    ![DE10 Switch SoC](/Screenshots/switchsoc.PNG) </br>
 * Boot up the Linux system.
-* Configure Linux such that the device is paired and bluetooth SPP port is enabled. (See below)
+* Configure Linux such that the device is paired and bluetooth SPP port is enabled. (See below and Ref)
 * Execute
 ```cd ~/eecs399/bluetooth_send/ ```</br>
 ```./service.py```
@@ -53,3 +53,9 @@ One problem with this service file is that no time-out function is added. Theref
     * JSONTools: https://community.thunkable.com/t/free-jsontools-extension-version-4-released/5447
     * SimpleBase64: https://groups.google.com/d/msg/mitappinventortest/TAkRiwgY1yI/wQBnn6E0CwAJ
     * PyBluez
+3. Configure Bluetooth on Linux
+Here are some links that we found useful in setting up bluetooth:
+    * Linux Bluetoothctl https://www.intel.com/content/dam/support/us/en/documents/edison/sb/edisonbluetooth_331704007.pdf
+    * Setup SPP port (and use RFCOMM) https://unix.stackexchange.com/questions/92255/how-do-i-connect-and-send-data-to-a-bluetooth-serial-port-on-linux
+    * Using PyBluez https://people.csail.mit.edu/albert/bluez-intro/x232.html
+    
