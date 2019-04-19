@@ -26,6 +26,7 @@ EAGLE PCB Files and component datasheets are in `AD9913_PCB`.
 
 #### Service.py
 This file is written in mind that in the future, auto-detection of carotid function will be added to the service. The directory in which scanned image file is read and transmitted can be changed. 
+One problem with this service file is that no time-out function is added. Therefore if a device is connected and not used (or, more likely, the app suddenly crashed without disconnecting the service), the service file will sit there forever, and must be restarted on Linux. This is not ideal for a product, and the best way is to add a time-out function, i.e. to have De10 automatically disconnect with the Android device if it doesn't receive any command from Android for a certain period of time. 
 
 ### Android App
 * Press **Connect** to connect with a paired device (DE10 for current use).
