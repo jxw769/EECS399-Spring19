@@ -5,6 +5,7 @@
 * The AD9913 Board
 * At least 8 female-female cables
 ## Setup Procedures
+0. **Make sure switch setup on DE10 is the same as shown below** ![DE10 Switch setup](switchsetup.PNG) <br/>
 1. Download the project folder `DE10_Standard_AD9913`. Open up `DE10_Standard_AD9913.qpf` using Quartus Prime.
 2. Compile the design to ensure code integrity. (Only needed for the first time)
 3. Connect DE10-Standard to the host PC USB port using type A to B USB cable, and connect the power cord.
