@@ -18,15 +18,15 @@ PCB Files and component datasheets are in `AD9913_PCB`.
 ```cd ~/eecs399/bluetooth_send/ ```</br>
 ```./service.py```
   
-### Configuring Bluetooth on Linux
+#### Configuring Bluetooth on Linux
 * Management of paired devices is done by bluetoothctl. (Configure etc/bluetooth/main.conf first)
 * Once device is paired, we need to open up SPP upon reboot. A sample supervisor file can be found under `supervisor_conf`. If SPP port is not added, bluetooth transmission will not initiate. 
 * Dependencies of service.py include PyBluez (for Python3).
 
-### Service.py
+#### Service.py
 This file is written in mind that in the future, auto-detection of carotid function will be added to the service. The directory in which scanned image file is read and transmitted can be changed. 
 
-#### Android App
+### Android App
 * Press **Connect** to connect with a paired device (DE10 for current use).
 * **Scan** to accept image data transmission via Bluetooth. Image are displayed in the (currently disabled) *Log* section. 
     * Scroll down *Log* to see activity history.
